@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Get today's date in the format yyyy-mm-dd
+date=$(date +"%Y-%m-%d")
+
+# Print the strings on the screen
+echo "one"
+echo "two"
+echo "three"
+echo "four"
+echo "five"
+
+# Create the text file
+filename="$date-file.txt"
+echo -e "one\ntwo\nthree\nfour\nfive" > "$filename"
+
+echo "Text file '$filename' has been created."
