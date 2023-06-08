@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Prompt the user to enter a path
+echo "Enter a directory path:"
+read path
+
+# Check if the path is a directory
+if [ -d "$path" ]; then
+    echo "The path is a directory."
+
+    # List all files in the directory
+    echo "List of files in the directory:"
+    ls "$path"
+else
+    echo "The path is not a directory."
+    echo "Please provide the file path of a directory."
+fi
